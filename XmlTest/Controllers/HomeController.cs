@@ -21,8 +21,8 @@ namespace XmlTest.Controllers
 
         public ActionResult Index()
         {
-            string uid = "U22433060F";
-            string pwd = "G0s0t3ODSa";
+            string uid = "xxxx";
+            string pwd = "xxxx";
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://posmatik2.isbank.com.tr/Authenticate.aspx");
              request.Method = "POST";
@@ -56,7 +56,7 @@ namespace XmlTest.Controllers
                     {
                         harekets.Add(new Hareket
                         {
-                            IbanNo = "TR310006400000163630099076",
+                            IbanNo = "xxxxx",
                             Tarih = Convert.ToString(element.Element("Tarih").Value),
                             ParaBirimi = Convert.ToString(element.Element("ParaBirimi").Value),
                             HareketSirano = Convert.ToString(element.Element("HareketSirano").Value),
@@ -76,7 +76,7 @@ namespace XmlTest.Controllers
                     {
                         harekets.Add(new Hareket
                         {
-                            IbanNo = "TR360006400000263630009935",
+                            IbanNo = "xxxxx",
                             Tarih = Convert.ToString(element.Element("Tarih").Value),
                             ParaBirimi = Convert.ToString(element.Element("ParaBirimi").Value),
                             HareketSirano = Convert.ToString(element.Element("HareketSirano").Value),
@@ -95,7 +95,7 @@ namespace XmlTest.Controllers
                     {
                         harekets.Add(new Hareket
                         {
-                            IbanNo = "TR460006400000263630009949",
+                            IbanNo = "xxxxx",
                             Tarih = Convert.ToString(element.Element("Tarih").Value),
                             ParaBirimi = Convert.ToString(element.Element("ParaBirimi").Value),
                             HareketSirano = Convert.ToString(element.Element("HareketSirano").Value),
