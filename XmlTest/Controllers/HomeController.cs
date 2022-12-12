@@ -21,8 +21,8 @@ namespace XmlTest.Controllers
 
         public ActionResult Index()
         {
-            string uid = "xxxx";
-            string pwd = "xxxx";
+            string uid = "xxxx"; // İş bankası kullanıcı adı
+            string pwd = "xxxx"; // İş bankası Şifre
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://posmatik2.isbank.com.tr/Authenticate.aspx");
              request.Method = "POST";
