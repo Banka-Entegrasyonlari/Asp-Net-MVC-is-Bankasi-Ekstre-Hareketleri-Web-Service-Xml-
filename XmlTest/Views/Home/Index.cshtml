@@ -1,0 +1,50 @@
+﻿@model List<XmlTest.Models.Hareket>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+@{int say = 0;}
+<table class=" table table-striped">
+    <thead>
+    <th>No</th>
+    <th>IbanNo</th>
+    <th>ParaBirimi</th>
+    <th>Tarih</th>
+    <th>HareketSirano</th>
+    <th>Miktar</th>
+    <th>Bakiye</th>
+    <th>Aciklama</th>
+    <th>IslemTuru</th>
+    <th>KarsiHesapVKN</th>
+    <th>LehdarHIban</th>
+    <th>valor</th>
+    <th>timeStamp</th>
+    <th>ISL_Saat</th>
+    </thead>
+    <tbody>
+
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@say</td>
+                <td>@x.IbanNo</td>
+                <td>@x.ParaBirimi</td>
+                <td>@x.Tarih</td>
+                <td>@x.HareketSirano</td>
+                <td>@x.Miktar</td>
+                <td>@x.Bakiye</td>
+                <td>@x.Aciklama</td>
+                <td>@x.IslemTuru</td>
+                <td>@x.KarsiHesapVKN</td>
+                <td>@x.LehdarHIban</td>
+                <td>@x.valor</td>
+                <td>@x.timeStamp</td>
+                <td>@x.ISL_Saat</td>
+            </tr>
+            say++;
+        }
+
+    </tbody>
+</table>
